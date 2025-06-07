@@ -1,14 +1,18 @@
 import SwiftUI
+import Nativeblocks
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        NativeblocksFrame(
+            route: "/",
+            routeArguments: [:],
+            loading: {
+                AnyView(NativeblocksLoading())
+            },
+            error: { message in
+                AnyView(NativeblocksError(message: message))
+            }
+        )
     }
 }
 
