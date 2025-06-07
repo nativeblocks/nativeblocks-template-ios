@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB5042722DF4490E000D6AF8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB5042712DF4490E000D6AF8 /* README.md */; };
 		BBF18EC62DF43E6F00E1240B /* Nativeblocks in Frameworks */ = {isa = PBXBuildFile; productRef = BBF18EC52DF43E6F00E1240B /* Nativeblocks */; };
 		BBF18EC92DF43E7B00E1240B /* NativeblocksFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = BBF18EC82DF43E7B00E1240B /* NativeblocksFoundation */; };
 		BBF18ECC2DF43E8200E1240B /* NativeblocksCompiler in Frameworks */ = {isa = PBXBuildFile; productRef = BBF18ECB2DF43E8200E1240B /* NativeblocksCompiler */; };
@@ -14,10 +15,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB5042712DF4490E000D6AF8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BBF18EB32DF43E0600E1240B /* nativeblocks-template-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nativeblocks-template-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		BB5042732DF44AC9000D6AF8 /* docs */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = docs;
+			sourceTree = "<group>";
+		};
 		BBF18EB52DF43E0600E1240B /* nativeblocks-template-ios */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "nativeblocks-template-ios";
@@ -43,6 +50,8 @@
 		BBF18EAA2DF43E0600E1240B = {
 			isa = PBXGroup;
 			children = (
+				BB5042732DF44AC9000D6AF8 /* docs */,
+				BB5042712DF4490E000D6AF8 /* README.md */,
 				BBF18EB52DF43E0600E1240B /* nativeblocks-template-ios */,
 				BBF18EB42DF43E0600E1240B /* Products */,
 			);
@@ -72,6 +81,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				BB5042732DF44AC9000D6AF8 /* docs */,
 				BBF18EB52DF43E0600E1240B /* nativeblocks-template-ios */,
 			);
 			name = "nativeblocks-template-ios";
@@ -130,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5042722DF4490E000D6AF8 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
