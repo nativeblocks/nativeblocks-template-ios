@@ -4,7 +4,7 @@ import Nativeblocks
 struct ContentView: View {
     var body: some View {
         NativeblocksFrame(
-            route: "/",
+            route: "/welcome",
             routeArguments: [:],
             loading: {
                 AnyView(NativeblocksLoading())

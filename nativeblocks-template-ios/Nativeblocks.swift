@@ -2,6 +2,7 @@ import Foundation
 import Nativeblocks
 import NativeblocksFoundation
 import NativeblocksWandKit
+import SwiftUI
 
 func initNativeblocks() {
     NativeblocksManager.initialize(
@@ -13,9 +14,24 @@ func initNativeblocks() {
     )
     NativeblocksFoundationProvider.provide()
     
+    /* to enable hot-reload and get live update in debug mode */
     #if DEBUG
     _ = NativeblocksManager.getInstance().wandKit(LiveKit())
     #endif
+    
+    /* if you need localization
+     _ = NativeblocksManager.getInstance().setLocalization(languageCode: "EN")
+    */
+    
+    NativeblocksManager.getInstance().provideFallbackBlock { keyType, key in
+        // custom fallback view when there is no block found
+        return Text("No block found for \(keyType)")
+    }
+    
+    NativeblocksManager.getInstance().provideFallbackAction { keyType, name in
+        // custom fallback action when thre is no action found
+        print("No action found for \(keyType)")
+    }
     
     NativeblocksManager.getInstance().provideEventLogger(loggerType: "AppLogger", logger: AppLogger())
     
@@ -24,7 +40,6 @@ func initNativeblocks() {
 func destroyNativeblocks() {
     NativeblocksManager.getInstance().destroy()
 }
-
 
 class AppLogger: INativeLogger {
     func log(eventName: String, parameters: [String : String]) {
