@@ -10,7 +10,7 @@
 		BB5042722DF4490E000D6AF8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB5042712DF4490E000D6AF8 /* README.md */; };
 		BBF18EC62DF43E6F00E1240B /* Nativeblocks in Frameworks */ = {isa = PBXBuildFile; productRef = BBF18EC52DF43E6F00E1240B /* Nativeblocks */; };
 		BBF18EC92DF43E7B00E1240B /* NativeblocksFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = BBF18EC82DF43E7B00E1240B /* NativeblocksFoundation */; };
-		BBF18ECC2DF43E8200E1240B /* NativeblocksCompiler in Frameworks */ = {isa = PBXBuildFile; productRef = BBF18ECB2DF43E8200E1240B /* NativeblocksCompiler */; };
+		BBF18ECC2DF43E8200E1240B /* NativeblocksCompiler in Frameworks */ = {isa = PBXBuildFile; productRef = BBF18ECB2DF43E8200E1240B /* NativeblocksCompiler */; settings = {ATTRIBUTES = (Required, ); }; };
 		BBF18ECF2DF43F2E00E1240B /* NativeblocksWandKit in Frameworks */ = {isa = PBXBuildFile; productRef = BBF18ECE2DF43F2E00E1240B /* NativeblocksWandKit */; };
 /* End PBXBuildFile section */
 
@@ -294,6 +294,8 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=iphoneos*]" = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*]" = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
@@ -332,6 +334,8 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=iphoneos*]" = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*]" = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
@@ -376,7 +380,7 @@
 			repositoryURL = "https://github.com/nativeblocks/nativeblocks-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.3.2;
+				minimumVersion = 1.4.1;
 			};
 		};
 		BBF18EC72DF43E7B00E1240B /* XCRemoteSwiftPackageReference "nativeblocks-foundation-ios" */ = {
@@ -384,7 +388,7 @@
 			repositoryURL = "https://github.com/nativeblocks/nativeblocks-foundation-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.2;
+				minimumVersion = 1.2.0;
 			};
 		};
 		BBF18ECA2DF43E8200E1240B /* XCRemoteSwiftPackageReference "nativeblocks-compiler-ios" */ = {
@@ -400,7 +404,7 @@
 			repositoryURL = "https://github.com/nativeblocks/nativeblocks-wandkit-ios-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.3;
+				minimumVersion = 1.0.5;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

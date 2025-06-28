@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nativeblocks/nativeblocks-foundation-ios",
       "state" : {
-        "revision" : "2cd27ede248ddb50d4ca0978ba21e19d9a8cab97",
-        "version" : "1.1.2"
+        "revision" : "6c1dd80bb1983b047a6664b7fe11ad7a4a711f70",
+        "version" : "1.2.0"
       }
     },
     {
@@ -33,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nativeblocks/nativeblocks-ios-sdk",
       "state" : {
-        "revision" : "298321bd879d24acf4b11e7442d19b3050cce974",
-        "version" : "1.3.2"
+        "revision" : "fd8748e339d367d857d2e3f1869fe611432f0748",
+        "version" : "1.4.1"
       }
     },
     {
@@ -42,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nativeblocks/nativeblocks-wandkit-ios-sdk.git",
       "state" : {
-        "revision" : "788c5f5e3d2fbc375fd7bf8fa401d80307057e4f",
-        "version" : "1.0.3"
+        "revision" : "09ab83c0f28b397a08f4ed27583d29e1a2bece68",
+        "version" : "1.0.5"
       }
     },
     {
