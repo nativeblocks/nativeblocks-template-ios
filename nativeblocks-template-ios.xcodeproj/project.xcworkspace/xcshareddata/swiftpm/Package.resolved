@@ -1,13 +1,13 @@
 {
-  "originHash" : "b0865db2139736ea8b770d261b59b08ddf14a60b0489e96b515a5a249eada304",
+  "originHash" : "e44ab304532207dfd58b58c9bb3a016cf06d0b617a0446a6b47789e34dda6169",
   "pins" : [
     {
       "identity" : "kingfisher",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/onevcat/Kingfisher.git",
       "state" : {
-        "revision" : "7deda23bbdca612076c5c315003d8638a08ed0f1",
-        "version" : "8.3.2"
+        "revision" : "2015fda791daa72c8058619545a593bf8c1dd59f",
+        "version" : "8.5.0"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nativeblocks/nativeblocks-compiler-ios",
       "state" : {
-        "revision" : "8fa5bcac5d3abfc25004a70b615b650985fef68c",
-        "version" : "1.2.2"
+        "revision" : "fc28acaa38750b7a6df65889f64795a3d8e9da02",
+        "version" : "1.3.0"
       }
     },
     {
@@ -24,17 +24,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nativeblocks/nativeblocks-foundation-ios",
       "state" : {
-        "revision" : "6c1dd80bb1983b047a6664b7fe11ad7a4a711f70",
-        "version" : "1.2.0"
+        "revision" : "7664c39b05209eec52eed9d0269bbac74983edc0",
+        "version" : "1.2.1"
       }
     },
     {
       "identity" : "nativeblocks-ios-sdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/nativeblocks/nativeblocks-ios-sdk",
+      "location" : "https://github.com/nativeblocks/nativeblocks-ios-sdk/",
       "state" : {
-        "revision" : "fd8748e339d367d857d2e3f1869fe611432f0748",
-        "version" : "1.4.1"
+        "revision" : "ae51b56abd7d7ee1a4fa3153b962ad32ec127a1f",
+        "version" : "1.5.0"
       }
     },
     {
@@ -42,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/nativeblocks/nativeblocks-wandkit-ios-sdk.git",
       "state" : {
-        "revision" : "09ab83c0f28b397a08f4ed27583d29e1a2bece68",
-        "version" : "1.0.5"
+        "revision" : "be9cf4dc4b8c46c956af68423c8fe9d7fd60408f",
+        "version" : "1.0.6"
       }
     },
     {

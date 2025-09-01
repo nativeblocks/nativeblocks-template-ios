@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		BB5042722DF4490E000D6AF8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB5042712DF4490E000D6AF8 /* README.md */; };
-		BBF18EC62DF43E6F00E1240B /* Nativeblocks in Frameworks */ = {isa = PBXBuildFile; productRef = BBF18EC52DF43E6F00E1240B /* Nativeblocks */; };
-		BBF18EC92DF43E7B00E1240B /* NativeblocksFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = BBF18EC82DF43E7B00E1240B /* NativeblocksFoundation */; };
-		BBF18ECC2DF43E8200E1240B /* NativeblocksCompiler in Frameworks */ = {isa = PBXBuildFile; productRef = BBF18ECB2DF43E8200E1240B /* NativeblocksCompiler */; settings = {ATTRIBUTES = (Required, ); }; };
-		BBF18ECF2DF43F2E00E1240B /* NativeblocksWandKit in Frameworks */ = {isa = PBXBuildFile; productRef = BBF18ECE2DF43F2E00E1240B /* NativeblocksWandKit */; };
+		BB5B60742E671E4600215954 /* NativeblocksCompiler in Frameworks */ = {isa = PBXBuildFile; productRef = BB5B60732E671E4600215954 /* NativeblocksCompiler */; };
+		BB5B60772E671E4D00215954 /* Nativeblocks in Frameworks */ = {isa = PBXBuildFile; productRef = BB5B60762E671E4D00215954 /* Nativeblocks */; };
+		BB5B607A2E671E5400215954 /* NativeblocksWandKit in Frameworks */ = {isa = PBXBuildFile; productRef = BB5B60792E671E5400215954 /* NativeblocksWandKit */; };
+		BB5B607D2E671E5F00215954 /* NativeblocksFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = BB5B607C2E671E5F00215954 /* NativeblocksFoundation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,10 +37,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBF18ECC2DF43E8200E1240B /* NativeblocksCompiler in Frameworks */,
-				BBF18EC92DF43E7B00E1240B /* NativeblocksFoundation in Frameworks */,
-				BBF18ECF2DF43F2E00E1240B /* NativeblocksWandKit in Frameworks */,
-				BBF18EC62DF43E6F00E1240B /* Nativeblocks in Frameworks */,
+				BB5B607A2E671E5400215954 /* NativeblocksWandKit in Frameworks */,
+				BB5B60742E671E4600215954 /* NativeblocksCompiler in Frameworks */,
+				BB5B607D2E671E5F00215954 /* NativeblocksFoundation in Frameworks */,
+				BB5B60772E671E4D00215954 /* Nativeblocks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,10 +86,10 @@
 			);
 			name = "nativeblocks-template-ios";
 			packageProductDependencies = (
-				BBF18EC52DF43E6F00E1240B /* Nativeblocks */,
-				BBF18EC82DF43E7B00E1240B /* NativeblocksFoundation */,
-				BBF18ECB2DF43E8200E1240B /* NativeblocksCompiler */,
-				BBF18ECE2DF43F2E00E1240B /* NativeblocksWandKit */,
+				BB5B60732E671E4600215954 /* NativeblocksCompiler */,
+				BB5B60762E671E4D00215954 /* Nativeblocks */,
+				BB5B60792E671E5400215954 /* NativeblocksWandKit */,
+				BB5B607C2E671E5F00215954 /* NativeblocksFoundation */,
 			);
 			productName = "nativeblocks-template-ios";
 			productReference = BBF18EB32DF43E0600E1240B /* nativeblocks-template-ios.app */;
@@ -120,10 +120,10 @@
 			mainGroup = BBF18EAA2DF43E0600E1240B;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				BBF18EC42DF43E6F00E1240B /* XCRemoteSwiftPackageReference "nativeblocks-ios-sdk" */,
-				BBF18EC72DF43E7B00E1240B /* XCRemoteSwiftPackageReference "nativeblocks-foundation-ios" */,
-				BBF18ECA2DF43E8200E1240B /* XCRemoteSwiftPackageReference "nativeblocks-compiler-ios" */,
-				BBF18ECD2DF43F2E00E1240B /* XCRemoteSwiftPackageReference "nativeblocks-wandkit-ios-sdk" */,
+				BB5B60722E671E4600215954 /* XCRemoteSwiftPackageReference "nativeblocks-compiler-ios" */,
+				BB5B60752E671E4D00215954 /* XCRemoteSwiftPackageReference "nativeblocks-ios-sdk" */,
+				BB5B60782E671E5400215954 /* XCRemoteSwiftPackageReference "nativeblocks-wandkit-ios-sdk" */,
+				BB5B607B2E671E5F00215954 /* XCRemoteSwiftPackageReference "nativeblocks-foundation-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BBF18EB42DF43E0600E1240B /* Products */;
@@ -375,60 +375,60 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BBF18EC42DF43E6F00E1240B /* XCRemoteSwiftPackageReference "nativeblocks-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/nativeblocks/nativeblocks-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.4.1;
-			};
-		};
-		BBF18EC72DF43E7B00E1240B /* XCRemoteSwiftPackageReference "nativeblocks-foundation-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/nativeblocks/nativeblocks-foundation-ios";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.0;
-			};
-		};
-		BBF18ECA2DF43E8200E1240B /* XCRemoteSwiftPackageReference "nativeblocks-compiler-ios" */ = {
+		BB5B60722E671E4600215954 /* XCRemoteSwiftPackageReference "nativeblocks-compiler-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/nativeblocks/nativeblocks-compiler-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.2.2;
+				minimumVersion = 1.3.0;
 			};
 		};
-		BBF18ECD2DF43F2E00E1240B /* XCRemoteSwiftPackageReference "nativeblocks-wandkit-ios-sdk" */ = {
+		BB5B60752E671E4D00215954 /* XCRemoteSwiftPackageReference "nativeblocks-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nativeblocks/nativeblocks-ios-sdk/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+		BB5B60782E671E5400215954 /* XCRemoteSwiftPackageReference "nativeblocks-wandkit-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/nativeblocks/nativeblocks-wandkit-ios-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.5;
+				minimumVersion = 1.0.6;
+			};
+		};
+		BB5B607B2E671E5F00215954 /* XCRemoteSwiftPackageReference "nativeblocks-foundation-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nativeblocks/nativeblocks-foundation-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BBF18EC52DF43E6F00E1240B /* Nativeblocks */ = {
+		BB5B60732E671E4600215954 /* NativeblocksCompiler */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BBF18EC42DF43E6F00E1240B /* XCRemoteSwiftPackageReference "nativeblocks-ios-sdk" */;
-			productName = Nativeblocks;
-		};
-		BBF18EC82DF43E7B00E1240B /* NativeblocksFoundation */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BBF18EC72DF43E7B00E1240B /* XCRemoteSwiftPackageReference "nativeblocks-foundation-ios" */;
-			productName = NativeblocksFoundation;
-		};
-		BBF18ECB2DF43E8200E1240B /* NativeblocksCompiler */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BBF18ECA2DF43E8200E1240B /* XCRemoteSwiftPackageReference "nativeblocks-compiler-ios" */;
+			package = BB5B60722E671E4600215954 /* XCRemoteSwiftPackageReference "nativeblocks-compiler-ios" */;
 			productName = NativeblocksCompiler;
 		};
-		BBF18ECE2DF43F2E00E1240B /* NativeblocksWandKit */ = {
+		BB5B60762E671E4D00215954 /* Nativeblocks */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BBF18ECD2DF43F2E00E1240B /* XCRemoteSwiftPackageReference "nativeblocks-wandkit-ios-sdk" */;
+			package = BB5B60752E671E4D00215954 /* XCRemoteSwiftPackageReference "nativeblocks-ios-sdk" */;
+			productName = Nativeblocks;
+		};
+		BB5B60792E671E5400215954 /* NativeblocksWandKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB5B60782E671E5400215954 /* XCRemoteSwiftPackageReference "nativeblocks-wandkit-ios-sdk" */;
 			productName = NativeblocksWandKit;
+		};
+		BB5B607C2E671E5F00215954 /* NativeblocksFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB5B607B2E671E5F00215954 /* XCRemoteSwiftPackageReference "nativeblocks-foundation-ios" */;
+			productName = NativeblocksFoundation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

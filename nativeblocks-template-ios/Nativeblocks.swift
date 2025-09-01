@@ -5,7 +5,7 @@ import NativeblocksWandKit
 import SwiftUI
 
 func initNativeblocks() {
-    NativeblocksManager.initialize(
+    _ = NativeblocksManager.initialize(
         edition: .cloud(
             endpoint: "https://api.nativeblocks.io/gateway/init",
             apiKey: "API_KEY",
@@ -23,17 +23,17 @@ func initNativeblocks() {
      _ = NativeblocksManager.getInstance().setLocalization(languageCode: "EN")
     */
     
-    NativeblocksManager.getInstance().provideFallbackBlock { keyType, key in
+    _ = NativeblocksManager.getInstance().provideFallbackBlock { keyType, key in
         // custom fallback view when there is no block found
         return Text("No block found for \(keyType)")
     }
     
-    NativeblocksManager.getInstance().provideFallbackAction { keyType, name in
+    _ = NativeblocksManager.getInstance().provideFallbackAction { keyType, name in
         // custom fallback action when thre is no action found
         print("No action found for \(keyType)")
     }
     
-    NativeblocksManager.getInstance().provideEventLogger(loggerType: "AppLogger", logger: AppLogger())
+    _ = NativeblocksManager.getInstance().provideEventLogger(loggerType: "AppLogger", logger: AppLogger())
     
 }
 
